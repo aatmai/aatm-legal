@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy · aatm</title>
-<meta name="description" content="What data aatm holds, why, and what control you have. Never sold, no ads, export or delete everything at any time.">
+<meta name="description" content="What data aatm holds, who helps process it, and what control you have. Never sold, no ads, export or delete everything at any time.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&display=swap" rel="stylesheet">
@@ -19,10 +19,10 @@
 
 <p class="kicker">Privacy</p>
 <h1>Privacy Policy</h1>
-<p class="meta">aatm &middot; Last updated 29 August 2026 &middot; <a href="mailto:hello@aatm.ai">hello@aatm.ai</a></p>
+<p class="meta">aatm &middot; Last updated 3 October 2026 &middot; <a href="mailto:hello@aatm.ai">hello@aatm.ai</a></p>
 
 <div class="short">
-  <p class="lede">aatm is a Vedic astrology companion. This policy says, in plain language, what data aatm holds, why, and what control you have. The short version: your data exists to read your own chart back to you, it is never sold, there are no ads, and you can export or delete everything at any time.</p>
+  <p class="lede">aatm is a Vedic astrology companion for Android and iPhone. This policy says, in plain language, what data aatm holds, why, who helps process it, and what control you have. The short version: your data exists to read your own chart back to you, it is never sold, there are no ads, and you can export or delete everything at any time.</p>
 </div>
 
 <h2>What we collect</h2>
@@ -30,33 +30,53 @@
 <h3>What you give us directly</h3>
 <ul>
   <li>Your name (as entered at onboarding), and the birth details you enter: date of birth, time of birth (or a time window if you are unsure), and place of birth. Place is what you type, never your device's location. aatm has no access to your device location.</li>
-  <li>Your conversations with aatm (the Ask thread), including decisions you ask aatm to hold, reflections you write, and the verifications or corrections you give ("that landed", "not really", and similar).</li>
-  <li>If you add a person to read a relationship: the name, relation, and birth details you enter for them. This is your private lens only. The person is never notified, never contacted, and never looked up anywhere; we store only what you typed.</li>
+  <li>Your conversations with aatm (the Ask thread), including decisions you ask aatm to hold, reflections and practice entries you write, and the verifications or corrections you give ("that landed", "not really", and similar).</li>
+  <li>Other things you choose to record: answers about years and dates you lived, readings and moments you save, and anything you tell aatm that another astrologer said about your chart.</li>
+  <li>If you add a person to read a relationship: the name, relation, and birth details (date, time and place) you enter for them. aatm keeps these, and the chart computed from them, on your account until you remove that person or delete your account. This is your private lens only. The person is never notified, never contacted, and never looked up anywhere; we store only what you typed.</li>
+  <li>If you sign in: the email of your Google or Apple account (see <a href="#where">Where it lives</a>). Signing in is optional; you can start reading without an account.</li>
 </ul>
 
 <h3>What is collected automatically</h3>
 <ul>
-  <li>App interaction analytics (which screens are used, feature events) via Google Firebase Analytics, associated with a device identifier (the Android advertising ID). Used only to understand and improve the product. We show no ads.</li>
-  <li>Crash logs and diagnostics via Firebase Crashlytics, to fix failures.</li>
+  <li>App interaction analytics (which screens are used, feature events such as a screenshot being taken on a screen; never the screenshot itself) via Google Firebase Analytics. On Android this is associated with a device identifier (the Android advertising ID). On iPhone, aatm does not use the advertising identifier and does not track you across other apps or websites. Used only to understand and improve the product. We show no ads.</li>
+  <li>Crash logs, diagnostics, and network performance timings via Firebase Crashlytics and Firebase Performance Monitoring, to find and fix failures and slowness.</li>
+  <li>Your device's time zone, so that "today" in aatm matches where you are.</li>
 </ul>
 
 <h3>What stays on your phone</h3>
 <ul>
-  <li>If you use voice dictation, the audio is processed on your device. Audio is not uploaded to our servers.</li>
+  <li>If you use voice dictation, the audio is processed on your device. Audio is not uploaded to our servers or to anyone else.</li>
+  <li>aatm never reads your photos. It only adds a share card to your photo library when you tap download.</li>
 </ul>
 
 <h2>What we do with it</h2>
 <p>Your birth details are used to compute your chart and its time periods. Your conversations and verifications are used to compose your readings, your record, and the continuity that makes aatm remember what you told it. Aggregated, de-identified usage data helps us improve the product. That is the whole list.</p>
 <p>Specifically, we do <strong>not</strong>: sell or rent your data to anyone; show advertising; use your data to train models shared outside your own account's experience; or contact anyone you add to the app.</p>
 
-<h2>Where it lives and how it moves</h2>
-<p>Your data is stored on our servers and transmitted only over encrypted connections (HTTPS; cleartext traffic is disabled in the app). Sign-in is through Google; we receive your Google account email for authentication and support.</p>
+<h2>AI that writes your readings</h2>
+<p>To write your readings, aatm sends your birth details, your chart, what you write in aatm, and the birth details of people you add to two AI companies: Anthropic, who make Claude, and OpenRouter, which passes each request to the company that runs the AI model. aatm sends it only to write your readings. You can turn this off any time in the app: Settings, then Readings written by AI.</p>
+<p>aatm asks before any of this is sent. If you choose "Not now", or turn the switch off later, nothing new goes to these companies, and aatm cannot write new readings. Readings already written stay readable.</p>
+
+<h2 id="where">Where it lives and how it moves</h2>
+<p>Your data is stored on our servers, hosted by Amazon Web Services in Mumbai, India, and transmitted only over encrypted connections (HTTPS; cleartext traffic is disabled in the app). Your sign-in email is stored encrypted. The AI companies above may process requests outside India.</p>
+<p><strong>Sign-in</strong> is through Google or Apple. We receive your email for sign-in and support. When you sign in, aatm sends a confirmation email to that address.</p>
+
+<h3>Who else helps run aatm</h3>
+<p>Besides the AI companies above, these service providers process data on our behalf, only to run aatm:</p>
+<ul>
+  <li><strong>Amazon Web Services</strong>: hosting, the database, server logs, and sending aatm's emails.</li>
+  <li><strong>Google</strong>: sign-in (Firebase Authentication), analytics, crash and performance reports (Firebase), and birth place search (Google Places, which receives the place text you type while searching).</li>
+  <li><strong>Apple</strong>: Sign in with Apple, if you choose it.</li>
+  <li><strong>New Relic</strong> and <strong>Sentry</strong>: server performance and error monitoring, so we can see when something breaks.</li>
+</ul>
 
 <h2>Your controls</h2>
 <ul>
-  <li><strong>Export.</strong> You can export everything aatm holds about you from inside the app. The export includes your profile, birth details, conversations, decisions, verifications, reflections, and any people you added.</li>
+  <li><strong>Export.</strong> Settings &rsaquo; What aatm keeps &rsaquo; Export everything gives you a file with everything aatm holds about you: your profile, birth details, chart, readings, conversations, decisions, verifications, reflections and practice entries, saved moments, and any people you added. Usage analytics are not included.</li>
   <li><strong>Delete.</strong> Settings &rsaquo; Delete everything removes your data, including your sign-in record. Deletion is immediate and total on our side. You can also request deletion without the app at <a href="../delete-account/">this page</a>.</li>
-  <li><strong>Quiet.</strong> aatm only initiates contact through in-app check-ins you have consented to, at a cadence you chose, and you can turn that off entirely. There are no push notifications.</li>
+  <li><strong>AI.</strong> Settings &rsaquo; Readings written by AI turns off sending to the AI companies at any time.</li>
+  <li><strong>Quiet.</strong> aatm only initiates contact through in-app check-ins you have consented to, at a cadence you chose (Settings &rsaquo; How often you hear from me), and you can turn that off entirely. There are no push notifications.</li>
+  <li><strong>Sharing.</strong> aatm shares nothing on your behalf. If you share a card or an invite link, it goes only where you send it. If you add the aatm home-screen widget, it shows the day's line on your home screen.</li>
 </ul>
 
 <h2>What aatm is not</h2>
@@ -69,7 +89,7 @@
 <p>If this policy changes materially, the app will say so plainly. The current version always lives at this URL.</p>
 
 <footer>
-  <p>Questions about this policy: <a href="mailto:hello@aatm.ai">hello@aatm.ai</a></p>
+  <p>Questions about this policy: <a href="mailto:hello@aatm.ai">hello@aatm.ai</a> &middot; <a href="../support/">Support</a> &middot; <a href="../delete-account/">Delete your account</a></p>
 </footer>
 
 </div>
